@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::middleware('api')->post('/event/save', 'App\Http\Controllers\EventController@save');
+Route::middleware('api')->get('/event/list', 'App\Http\Controllers\EventController@index');
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('api')->get('/user', function (Request $request) {
     return $request->user();
 });
