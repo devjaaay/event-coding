@@ -2049,6 +2049,7 @@ var parseDate = function parseDate(date) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
+                _this2.events = [];
                 axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('api/event/list').then( /*#__PURE__*/function () {
                   var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(_ref2) {
                     var data;
@@ -2121,7 +2122,7 @@ var parseDate = function parseDate(date) {
                   };
                 }());
 
-              case 1:
+              case 2:
               case "end":
                 return _context3.stop();
             }

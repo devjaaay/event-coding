@@ -109,6 +109,7 @@ export default {
             })
         },
         async getAll () {
+            this.events = []
             axios.get('api/event/list')
                 .then(async ({ data }) => {
                     data.forEach(async event => {
